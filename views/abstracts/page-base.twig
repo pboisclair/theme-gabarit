@@ -1,0 +1,18 @@
+{% include 'head.twig' %}
+<body id="{{page_id}}" class="{{page_class}}" data-template="{{page_template}}" data-niveau="{{page_level}}">
+	
+    {% include 'header.twig' %}
+
+    <div class="grid-container-fluid " id="bloc-main">
+        
+        <main class="grid-container container-nopadding">
+            {% block content %}
+           
+            {% endblock content %}
+        </main>
+
+	</div>
+
+    {% include 'footer.twig' %}				
+</body>
+</html>
